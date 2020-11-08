@@ -37,4 +37,4 @@ while True:
     ana.data.append((timestamp, ana.followers))
     sleep(3598) 
 #print(ana.following, ana.followers)
-print(ana.data)
+#print(ana.data)
