@@ -26,6 +26,9 @@ class InstaAnalytics:
 
         self.driver.quit()
 
+    def saveData(self):
+        return null
+
 ana = InstaAnalytics('friedricheibl')
 
 #loop to check in one-hour intervals
@@ -34,7 +37,15 @@ while True:
     timeNow = datetime.now()
     timestamp = timeNow.strftime("%Y-%m-%d %H:%M:%S")
     print(timestamp, "      Followers: ", ana.followers)
-    ana.data.append((timestamp, ana.followers))
+
+    #the following line would collect the data in a list structure which would be cleared every time the program is interrupted
+    #ana.data.append((timestamp, ana.followers)) 
+    
+    #file version
+    f = open("data.txt", "a+")
+    f.write(timestamp + "        Followers: " + ana.followers + "\n")
+    f.close()
+    
     sleep(3598) 
 #print(ana.following, ana.followers)
 #print(ana.data)
