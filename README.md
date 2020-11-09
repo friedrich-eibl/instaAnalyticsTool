@@ -1,6 +1,3 @@
-# instaAnalyticsTool
-A simple Instagram analytics tool without need of login or using the Instagram Graph API
-
 # InstaAnalyticsTool
 
 InstaAnalyticsTool is a free collection of useful scripts to get stats from any Instagram profile without login or registration. To make this possible it runs without using the Instagram Graph API but rather scraping the data from the site on its own. This project is still in production and the most exciting features like a web interface are yet to come!
